@@ -1,14 +1,18 @@
-package com.swaraj.dao;
+package com.swaraj.service;
 
 import java.util.List;
 
 import com.swaraj.entity.Employee;
 
-public interface EmployeeDAO {
-
+public interface EmployeeService {
+	
 	public List<Employee> findAll();
+	
 	public Employee findById(int id);
+	
 	public void save(Employee employee);
+	
 	public void deleteById(int id);
 	
+
 }
